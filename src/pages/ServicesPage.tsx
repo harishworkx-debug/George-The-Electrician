@@ -179,7 +179,7 @@ export default function ServicesPage() {
                     </div>
                     <p className="text-sm text-gray-600 leading-relaxed mb-4">{service.description}</p>
                     <span className="inline-flex items-center gap-1 text-sm font-semibold text-yellow-600">
-                      Learn More
+                      {service.shortTitle}
                       <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>

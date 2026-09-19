@@ -55,7 +55,7 @@ export function ServicesGrid() {
                     {service.description}
                   </p>
                   <span className="inline-flex items-center gap-1 text-sm font-semibold text-yellow-600 group-hover:text-yellow-700">
-                    Learn More
+                    {service.shortTitle}
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>

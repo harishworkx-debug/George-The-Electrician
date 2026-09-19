@@ -56,7 +56,7 @@ export default function ElectricalServicesLocationPage() {
                   <h2 className="text-lg font-bold text-gray-900 mb-2">{s.shortTitle}</h2>
                   <p className="text-sm text-gray-600 leading-relaxed flex-1">{s.description}</p>
                   <span className="inline-flex items-center gap-1 text-sm font-semibold text-yellow-600 mt-3">
-                    Learn More
+                    {s.shortTitle}
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
