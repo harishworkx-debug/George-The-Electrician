@@ -6,9 +6,11 @@ import { services, business, locations, testimonials } from "@/data/business";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-export default function ServicePage() {
-  const { slug } = useParams();
-  const service = services.find((s) => s.urlSlug === slug);
+export default function ServicePage({ slug: propSlug }: { slug?: string }) {
+  const { slug: paramSlug } = useParams();
+  const location = window.location.pathname.replace("/", "");
+  const activeSlug = propSlug || paramSlug || location;
+  const service = services.find((s) => s.urlSlug === activeSlug);
 
   if (!service) return <Navigate to="/services" replace />;
 

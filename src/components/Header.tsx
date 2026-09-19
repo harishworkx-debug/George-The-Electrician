@@ -88,7 +88,7 @@ export function Header() {
                   <ChevronDown className={`w-4 h-4 transition-transform ${servicesDropdown ? "rotate-180" : ""}`} />
                 </button>
                 {servicesDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-72 bg-black/98 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl py-2 max-h-[70vh] overflow-y-auto">
+                  <div className="absolute top-full left-0 mt-1 w-72 bg-black backdrop-blur-md rounded-xl border border-white/10 shadow-2xl py-2 max-h-[70vh] overflow-y-auto">
                     <Link
                       to="/services"
                       className="flex items-center justify-between px-4 py-2.5 text-sm text-gray-300 hover:text-yellow-400 hover:bg-white/5 transition-colors"
@@ -122,7 +122,7 @@ export function Header() {
                   <ChevronDown className={`w-4 h-4 transition-transform ${areasDropdown ? "rotate-180" : ""}`} />
                 </button>
                 {areasDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-72 bg-black/98 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl py-2">
+                  <div className="absolute top-full left-0 mt-1 w-72 bg-black backdrop-blur-md rounded-xl border border-white/10 shadow-2xl py-2">
                     <Link
                       to="/service-areas"
                       className="flex items-center justify-between px-4 py-2.5 text-sm text-gray-300 hover:text-yellow-400 hover:bg-white/5 transition-colors"
@@ -190,7 +190,7 @@ export function Header() {
         </div>
 
         {mobileOpen && (
-          <div className="lg:hidden bg-black/98 backdrop-blur-md border-t border-white/10 max-h-[80vh] overflow-y-auto">
+          <div className="lg:hidden bg-black backdrop-blur-md border-t border-white/10 max-h-[80vh] overflow-y-auto">
             <nav className="px-4 py-4 flex flex-col gap-1">
               <Link
                 to="/"

@@ -6,8 +6,10 @@ import { locations, services, business, testimonials, images } from "@/data/busi
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-export default function LocationPage() {
-  const { slug } = useParams();
+export default function LocationPage({ slug: propSlug }: { slug?: string }) {
+  const { slug: paramSlug } = useParams();
+  const locationPath = window.location.pathname.replace("/", "");
+  const slug = propSlug || paramSlug || locationPath;
 
   // Determine if this is an "electrician-" or "electrical-services-" page
   const isElectrician = slug?.startsWith("electrician-");
