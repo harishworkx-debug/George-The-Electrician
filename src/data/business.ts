@@ -12,7 +12,7 @@ export const business = {
     full: "400 W Colorado St Ste 447, Glendale, CA 91204, USA",
   },
   mapsUrl: "https://maps.app.goo.gl/Z5ck5GM3JjHuC3Yq6",
-  mapsEmbed: "https://www.google.com/maps?q=400+W+Colorado+St+Ste+447,+Glendale,+CA+91204&output=embed",
+  mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.1571742029755!2d-118.2636694886613!3d34.142320773011264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c16fa9bb6f73%3A0xcb559429e511e40a!2sGeorge%20The%20Electrician!5e0!3m2!1sen!2sin!4v1790058121626!5m2!1sen!2sin",
   email: "info@georgetheelectrician.com",
   hours: [
     { day: "Monday", time: "7:00 AM – 7:00 PM" },

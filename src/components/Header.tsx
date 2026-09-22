@@ -77,7 +77,12 @@ export function Header() {
               </Link>
 
               {/* Services Dropdown */}
-              <div ref={servicesRef} className="relative">
+              <div 
+                ref={servicesRef} 
+                className="relative"
+                onMouseEnter={() => setServicesDropdown(true)}
+                onMouseLeave={() => setServicesDropdown(false)}
+              >
                 <button
                   onClick={() => { setServicesDropdown(!servicesDropdown); setAreasDropdown(false); }}
                   className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -88,7 +93,7 @@ export function Header() {
                   <ChevronDown className={`w-4 h-4 transition-transform ${servicesDropdown ? "rotate-180" : ""}`} />
                 </button>
                 {servicesDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-72 bg-black backdrop-blur-md rounded-xl border border-white/10 shadow-2xl py-2 max-h-[70vh] overflow-y-auto">
+                  <div className="absolute top-full left-0 mt-1 w-72 bg-black backdrop-blur-md rounded-xl border border-white/10 shadow-2xl py-2 max-h-[70vh] overflow-y-auto before:absolute before:inset-x-0 before:-top-2 before:h-2">
                     <Link
                       to="/services"
                       className="flex items-center justify-between px-4 py-2.5 text-sm text-gray-300 hover:text-yellow-400 hover:bg-white/5 transition-colors"
@@ -111,7 +116,12 @@ export function Header() {
               </div>
 
               {/* Service Areas Dropdown */}
-              <div ref={areasRef} className="relative">
+              <div 
+                ref={areasRef} 
+                className="relative"
+                onMouseEnter={() => setAreasDropdown(true)}
+                onMouseLeave={() => setAreasDropdown(false)}
+              >
                 <button
                   onClick={() => { setAreasDropdown(!areasDropdown); setServicesDropdown(false); }}
                   className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -122,7 +132,7 @@ export function Header() {
                   <ChevronDown className={`w-4 h-4 transition-transform ${areasDropdown ? "rotate-180" : ""}`} />
                 </button>
                 {areasDropdown && (
-                  <div className="absolute top-full left-0 mt-1 w-72 bg-black backdrop-blur-md rounded-xl border border-white/10 shadow-2xl py-2">
+                  <div className="absolute top-full left-0 mt-1 w-72 bg-black backdrop-blur-md rounded-xl border border-white/10 shadow-2xl py-2 before:absolute before:inset-x-0 before:-top-2 before:h-2">
                     <Link
                       to="/service-areas"
                       className="flex items-center justify-between px-4 py-2.5 text-sm text-gray-300 hover:text-yellow-400 hover:bg-white/5 transition-colors"
