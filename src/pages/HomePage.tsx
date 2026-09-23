@@ -20,7 +20,7 @@ export default function HomePage() {
     <>
       <SEO
         title="Electrician Glendale, CA | George The Electrician — Licensed & 24/7"
-        description="Glendale's trusted licensed electrician for 15+ years. Residential, commercial, emergency electrical repair, panel upgrades, EV chargers & more. Call (747) 837-1879 for same-day service."
+        description="Glendale's trusted licensed electrician for 15+ years. Residential, commercial, emergency electrical repair, panel upgrades, EV chargers & more. Call (747) 252-1457 for same-day service."
         canonical="/"
         schema={[buildFAQSchema(homeFAQs)]}
       />

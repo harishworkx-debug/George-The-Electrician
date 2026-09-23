@@ -2,7 +2,7 @@ export const business = {
   name: "George The Electrician",
   phone: "+1 747-837-1879",
   phoneRaw: "+17478371879",
-  phoneDisplay: "(747) 837-1879",
+  phoneDisplay: "(747) 252-1457",
   address: {
     street: "400 W Colorado St Ste 447",
     city: "Glendale",
@@ -677,6 +677,6 @@ export const homeFAQs: FAQItem[] = [
   {
     question: "How can I schedule an appointment?",
     answer:
-      "The fastest way is to call us at (747) 837-1879. We also offer same-day appointments for most service calls in Glendale. Our dispatcher will give you a window and call when the electrician is on the way.",
+      "The fastest way is to call us at (747) 252-1457. We also offer same-day appointments for most service calls in Glendale. Our dispatcher will give you a window and call when the electrician is on the way.",
   },
 ];

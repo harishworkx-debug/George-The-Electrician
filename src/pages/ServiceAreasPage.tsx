@@ -73,7 +73,7 @@ export default function ServiceAreasPage() {
     <>
       <SEO
         title="Service Areas | George The Electrician — Glendale, Pasadena, Burbank & More"
-        description="George The Electrician serves Glendale, Pasadena, Burbank, La Cañada Flintridge, and Los Angeles neighborhoods. Licensed electrician, 24/7 emergency, no travel fees. Call (747) 837-1879."
+        description="George The Electrician serves Glendale, Pasadena, Burbank, La Cañada Flintridge, and Los Angeles neighborhoods. Licensed electrician, 24/7 emergency, no travel fees. Call (747) 252-1457."
         canonical="/service-areas"
       />
 

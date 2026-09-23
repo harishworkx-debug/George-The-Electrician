@@ -28,12 +28,12 @@ export default function LocationPage({ slug: propSlug }: { slug?: string }) {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const pageTitle = isElectrician
-    ? `Electrician in ${location.name} | George The Electrician — Call (747) 837-1879`
+    ? `Electrician in ${location.name} | George The Electrician — Call (747) 252-1457`
     : `Electrical Services in ${location.name} | George The Electrician`;
 
   const pageDesc = isElectrician
-    ? `Licensed electrician serving ${location.name}. Residential, commercial, emergency repair, panel upgrades, EV chargers & more. Same-day service. Call (747) 837-1879.`
-    : `Complete electrical services in ${location.name} — residential, commercial, emergency, panel upgrades, EV chargers, lighting, inspections. Licensed electrician. Call (747) 837-1879.`;
+    ? `Licensed electrician serving ${location.name}. Residential, commercial, emergency repair, panel upgrades, EV chargers & more. Same-day service. Call (747) 252-1457.`
+    : `Complete electrical services in ${location.name} — residential, commercial, emergency, panel upgrades, EV chargers, lighting, inspections. Licensed electrician. Call (747) 252-1457.`;
 
   const canonicalPath = isElectrician
     ? `/electrician-${location.slug}`

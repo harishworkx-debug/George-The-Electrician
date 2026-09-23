@@ -8,7 +8,7 @@ export default function NotFoundPage() {
     <>
       <SEO
         title="Page Not Found | George The Electrician — Glendale, CA"
-        description="The page you are looking for could not be found. Call George The Electrician at (747) 837-1879 for electrical services in Glendale, CA."
+        description="The page you are looking for could not be found. Call George The Electrician at (747) 252-1457 for electrical services in Glendale, CA."
         canonical="/404"
       />
       <section className="bg-black py-24 lg:py-32">
