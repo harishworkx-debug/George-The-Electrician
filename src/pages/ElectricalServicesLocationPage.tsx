@@ -9,7 +9,7 @@ export default function ElectricalServicesLocationPage() {
     <>
       <SEO
         title="Electrical Services in Glendale, CA | George The Electrician"
-        description="Complete electrical services in Glendale, CA — residential, commercial, emergency, panel upgrades, EV chargers, lighting, inspections. Licensed electrician. Call (747) 252-1457."
+        description="Complete electrical services in Glendale, CA — residential, commercial, emergency, panel upgrades, EV chargers, lighting, inspections. Licensed electrician. Call (747) 269-3742."
         canonical="/electrical-services-glendale-ca"
       />
 

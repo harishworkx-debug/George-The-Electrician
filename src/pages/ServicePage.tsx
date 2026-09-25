@@ -28,7 +28,7 @@ export default function ServicePage({ slug: propSlug }: { slug?: string }) {
   return (
     <>
       <SEO
-        title={`${service.title} | George The Electrician — Call (747) 252-1457`}
+        title={`${service.title} | George The Electrician — Call (747) 269-3742`}
         description={service.description}
         canonical={`/${service.urlSlug}`}
         schema={[

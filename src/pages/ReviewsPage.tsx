@@ -10,7 +10,7 @@ export default function ReviewsPage() {
     <>
       <SEO
         title="Reviews & Testimonials | George The Electrician — Glendale, CA"
-        description="Read real customer reviews for George The Electrician. 4.9-star rating from 127+ verified Glendale customers. Licensed electrician you can trust. Call (747) 252-1457."
+        description="Read real customer reviews for George The Electrician. 4.9-star rating from 127+ verified Glendale customers. Licensed electrician you can trust. Call (747) 269-3742."
         canonical="/reviews"
       />
 

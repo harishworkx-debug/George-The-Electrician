@@ -12,7 +12,7 @@ export default function FAQPage() {
     <>
       <SEO
         title="FAQ | George The Electrician — Glendale, CA"
-        description="Frequently asked questions about electrical services in Glendale, CA. Pricing, emergency service, warranties, EV chargers, and more. Call (747) 252-1457."
+        description="Frequently asked questions about electrical services in Glendale, CA. Pricing, emergency service, warranties, EV chargers, and more. Call (747) 269-3742."
         canonical="/faq"
         schema={[buildFAQSchema(homeFAQs)]}
       />
