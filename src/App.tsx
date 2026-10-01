@@ -1,6 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import HomePage from "@/pages/HomePage";
+import { AboutPage } from "@/pages/AboutPage";
+import { BlogPage } from "@/pages/BlogPage";
+import { BlogPostPage } from "@/pages/BlogPostPage";
 import ServicesPage from "@/pages/ServicesPage";
 import ResidentialElectricianPage from "@/pages/ResidentialElectricianPage";
 import CommercialElectricianPage from "@/pages/CommercialElectricianPage";
@@ -34,6 +37,9 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <HomePage /> },
+      { path: "/about", element: <AboutPage /> },
+      { path: "/blog", element: <BlogPage /> },
+      { path: "/blog/:slug", element: <BlogPostPage /> },
       { path: "/services", element: <ServicesPage /> },
       { path: "/service-areas", element: <ServiceAreasPage /> },
       { path: "/reviews", element: <ReviewsPage /> },

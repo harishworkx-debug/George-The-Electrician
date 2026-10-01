@@ -1,8 +1,9 @@
+import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Phone, MapPin, ChevronRight, CheckCircle2, Star, Clock, ShieldCheck, Zap, Home as HomeIcon, Building2 } from "lucide-react";
 import { SEO, buildFAQSchema } from "@/components/SEO";
 import { CTABanner } from "@/components/CTABanner";
-import { locations, services, business, testimonials, images } from "@/data/business";
+import { locations, services, business, testimonials, images, homeFAQs } from "@/data/business";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
@@ -44,42 +45,8 @@ export default function LocationPage({ slug: propSlug }: { slug?: string }) {
     : `Electrical Services in ${location.name}`;
 
   const locationFaqs = isElectrician
-    ? [
-        {
-          question: `Do you provide electrical service in ${location.shortName}, CA?`,
-          answer: `Yes. George The Electrician serves ${location.shortName} and the surrounding communities. We are based in Glendale and respond to service calls throughout the area, typically within 60–90 minutes for emergencies.`,
-        },
-        {
-          question: `How fast can an electrician get to ${location.shortName}?`,
-          answer: `For standard service calls, we can usually have a licensed electrician at your ${location.shortName} property the same day. Emergency calls receive priority dispatch with an average response time of 60–90 minutes.`,
-        },
-        {
-          question: `Are you licensed to work in ${location.shortName}?`,
-          answer: `Yes. We are fully licensed by the California State License Board, bonded, and insured. We handle all permitting and inspections required by ${location.shortName} and Los Angeles County.`,
-        },
-        {
-          question: `Do you charge a travel fee to come to ${location.shortName}?`,
-          answer: `No. We do not charge travel fees within our standard service area. The same flat-rate pricing applies whether you are in Glendale, Pasadena, Burbank, or La Cañada Flintridge.`,
-        },
-      ]
-    : [
-        {
-          question: `What electrical services do you offer in ${location.shortName}?`,
-          answer: `We offer the complete range of electrical services in ${location.shortName} — residential wiring, commercial electrical, emergency repair, panel upgrades, EV charger installation, lighting, outlet and switch repair, ceiling fan installation, and electrical inspections.`,
-        },
-        {
-          question: `How quickly can you provide electrical service in ${location.shortName}?`,
-          answer: `For standard service calls, we can usually have a licensed electrician at your ${location.shortName} property the same day. Emergency calls receive priority dispatch with an average response time of 60–90 minutes.`,
-        },
-        {
-          question: `Do you handle commercial electrical services in ${location.shortName}?`,
-          answer: `Yes. We provide full commercial electrical services in ${location.shortName} including tenant improvements, build-outs, three-phase power, Title 24 lighting compliance, data cabling, and preventive maintenance contracts.`,
-        },
-        {
-          question: `Are you licensed for electrical work in ${location.shortName}?`,
-          answer: `Yes. We are fully licensed by the California State License Board, bonded, and insured. We handle all permitting and inspections required by ${location.shortName} and Los Angeles County.`,
-        },
-      ];
+    ? (location as any).electricianFaqs || homeFAQs
+    : (location as any).electricalServicesFaqs || homeFAQs;
 
   const otherLocations = locations.filter((l) => l.slug !== location.slug);
   const locationImage = location.slug === "glendale-ca" ? images.glendale : images.glendaleStreet;
@@ -188,24 +155,26 @@ export default function LocationPage({ slug: propSlug }: { slug?: string }) {
               {location.neighborhoods.length > 0 && (
                 <div className="mt-10">
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">Neighborhoods We Serve in {location.shortName}</h2>
-                  <div className="flex flex-wrap gap-2">
+                  <ul className="flex flex-wrap gap-2 m-0 p-0 list-none">
                     {location.neighborhoods.map((n) => (
-                      <span key={n} className="px-4 py-2 rounded-lg bg-gray-100 text-sm text-gray-700">
+                      <li key={n} className="px-4 py-2 rounded-lg bg-gray-100 text-sm text-gray-700">
                         {n}
-                      </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               )}
 
               {location.zipCodes.length > 0 && (
                 <div className="mt-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-3">ZIP Codes We Serve</h3>
-                  <div className="flex flex-wrap gap-2">
+                  <ul className="flex flex-wrap gap-2 m-0 p-0 list-none">
                     {location.zipCodes.map((z) => (
-                      <span key={z} className="px-3 py-1.5 rounded-lg bg-gray-100 text-sm text-gray-600 font-mono">{z}</span>
+                      <li key={z} className="px-3 py-1.5 rounded-lg bg-gray-100 text-sm text-gray-600 font-mono">
+                        {z}
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               )}
 
@@ -219,7 +188,7 @@ export default function LocationPage({ slug: propSlug }: { slug?: string }) {
                 <p className="text-sm text-gray-600 mb-4">
                   {isElectrician
                     ? `See all the electrical services we offer in ${location.shortName} — from residential wiring to commercial build-outs.`
-                    : `Learn more about our electrician services in ${location.shortName}, including neighborhoods, ZIP codes, and response times.`}
+                    : `View our full ${location.shortName} electrician services, including neighborhoods, ZIP codes, and response times.`}
                 </p>
                 <Link
                   to={isElectrician ? `/electrical-services-${location.slug}` : `/electrician-${location.slug}`}
@@ -294,8 +263,8 @@ export default function LocationPage({ slug: propSlug }: { slug?: string }) {
                       </li>
                     ))}
                     <li>
-                      <Link to="/services" className="text-sm font-semibold text-yellow-600 hover:text-yellow-700">
-                        View All →
+                      <Link to="/services" className="text-sm font-semibold text-yellow-600 hover:text-yellow-700 block mt-2">
+                        View All Electrical Services in {location.shortName} →
                       </Link>
                     </li>
                   </ul>
@@ -315,7 +284,7 @@ export default function LocationPage({ slug: propSlug }: { slug?: string }) {
               : `${location.shortName} Electrical Services — FAQ`}
           </h2>
           <div className="space-y-3">
-            {locationFaqs.map((faq, i) => (
+            {locationFaqs.map((faq: { question: string, answer: string }, i: number) => (
               <div key={i} className="border border-gray-200 rounded-xl overflow-hidden bg-white">
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}

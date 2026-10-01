@@ -1,7 +1,10 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 export const business = {
   name: "George The Electrician",
-  phone: "+1 747-837-1879",
-  phoneRaw: "+17478371879",
+  phone: "+1 747-269-3742",
+  phoneRaw: "+17472693742",
   phoneDisplay: "(747) 269-3742",
   address: {
     street: "400 W Colorado St Ste 447",
@@ -73,7 +76,7 @@ export interface ServiceData {
   shortTitle: string;
   tagline: string;
   description: string;
-  longDescription: string[];
+  longDescription: (string | React.ReactNode)[];
   icon: string;
   image: string;
   features: string[];
@@ -246,17 +249,57 @@ export const services: ServiceData[] = [
     ],
   },
   {
-    slug: "electrical-panel-upgrade",
+        slug: "electrical-panel-upgrade",
     urlSlug: "electrical-panel-upgrade-glendale-ca",
     title: "Electrical Panel Upgrade in Glendale, CA",
     shortTitle: "Panel Upgrade",
-    tagline: "Modernize your power, eliminate tripping breakers",
+    tagline: "More power and safety for your modern home",
     description:
-      "Is your panel over 25 years old or too small for today's appliances? We upgrade Glendale homes and businesses to safe, high-capacity electrical panels with same-week scheduling.",
+      "Is your electrical panel outdated, buzzing, or tripping? We upgrade 100-amp to 200-amp panels in Glendale to support new appliances, EV chargers, and HVAC systems.",
     longDescription: [
-      "Your electrical panel is the heart of your home's power system. If it is outdated, undersized, or manufactured by Federal Pacific or Zinsco — brands linked to fire risks — it is time for an upgrade. George The Electrician has replaced hundreds of panels in Glendale, bringing homes up to modern safety and capacity standards.",
-      "A panel upgrade is essential if you are adding an EV charger, a tankless water heater, a backyard ADU, or any major appliance that draws significant power. We size your new panel for today's needs and tomorrow's expansions, with options from 100 to 400 amps.",
-      "Every panel upgrade includes a new main breaker, grounding and bonding upgrades, surge protection, permitting, and city inspection coordination. Most upgrades are completed in a single day.",
+      <div key="intro" className="space-y-4">
+        <p>The electrical panel is the heart of your home's power system. Older panels, especially those installed before 1990, were simply not designed to handle the electrical load of modern living — from central HVAC systems and induction stoves to Level 2 EV chargers.</p>
+      </div>,
+      <div key="signs" className="mt-8 mb-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Signs You Need a Panel Upgrade</h3>
+        <ul className="list-disc pl-5 space-y-2 text-gray-700">
+          <li>Breakers trip frequently when using multiple appliances.</li>
+          <li>Lights flicker or dim when the AC or microwave turns on.</li>
+          <li>The panel makes a buzzing or crackling sound.</li>
+          <li>You hear a buzzing sound from your breaker box.</li>
+          <li>You have an outdated brand with known fire risks (Zinsco, Federal Pacific Electric).</li>
+          <li>You are adding a pool, spa, ADU, or EV charger.</li>
+        </ul>
+      </div>,
+      <div key="100v200" className="mt-8 mb-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-3">100-Amp vs 200-Amp Service</h3>
+        <p className="text-gray-700 mb-2">Most older Glendale homes were built with 60-amp or 100-amp service. Today, the minimum recommended capacity for a modern home is 200 amps. Upgrading to a 200-amp panel ensures you have the capacity to safely run all your appliances simultaneously without risking an overload.</p>
+      </div>,
+      <div key="repair-replace" className="mt-8 mb-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Panel Replacement vs. Repair</h3>
+        <p className="text-gray-700 mb-2">If you have a single bad breaker, we can often just replace that breaker. However, if your bus bar is burnt, the panel is heavily rusted, or it is an obsolete brand, a full replacement is the only code-compliant and safe solution.</p>
+      </div>,
+      <div key="safety" className="mt-8 mb-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Safety Considerations & Breaker Issues</h3>
+        <p className="text-gray-700 mb-2">Modern electrical panels utilize Arc Fault Circuit Interrupters (AFCI) and Ground Fault Circuit Interrupters (GFCI) at the breaker level. This provides whole-home protection against electrical fires and shock hazards, far exceeding the safety standards of older breaker boxes.</p>
+      </div>,
+      <div key="process" className="bg-yellow-50 rounded-2xl p-6 border border-yellow-200 mt-8 mb-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Our Glendale Panel Upgrade Process</h3>
+        <ol className="list-decimal pl-5 space-y-3 text-gray-800">
+          <li><strong>Load Calculation & Meter Spot:</strong> We assess your home's total electrical load and coordinate with Glendale Water & Power (GWP) for meter spot approval.</li>
+          <li><strong>Permitting:</strong> We pull all necessary permits from the City of Glendale Building & Safety department.</li>
+          <li><strong>Installation:</strong> We disconnect the power, remove the old equipment, and install your new 200-amp panel, grounding system, and new breakers. Power is usually restored the same day.</li>
+          <li><strong>Inspection:</strong> We coordinate the final city inspection to ensure everything meets the National Electrical Code (NEC) and local amendments.</li>
+        </ol>
+      </div>,
+      <div key="trust" className="mt-8 mb-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-3">Why Glendale Homeowners Choose George</h3>
+        <p className="text-gray-700 mb-2">With over 15 years serving the Glendale area, we know exactly what local inspectors are looking for and how GWP operates. This prevents delays and ensures your power is turned back on as quickly as possible. We use premium Square D or Eaton panels backed by our lifetime workmanship warranty.</p>
+      </div>,
+      <div key="areas" className="mt-8 mb-2">
+        <p className="text-sm text-gray-500 font-semibold uppercase tracking-wider mb-2">Local Service Areas</p>
+        <p className="text-sm text-gray-600">While based in Glendale, we provide panel upgrades across <Link to="/electrician-pasadena-ca" className="text-yellow-600 hover:underline">Pasadena</Link>, <Link to="/electrician-burbank-ca" className="text-yellow-600 hover:underline">Burbank</Link>, <Link to="/electrician-la-canada-flintridge-ca" className="text-yellow-600 hover:underline">La Cañada Flintridge</Link>, and <Link to="/electrician-los-angeles-ca" className="text-yellow-600 hover:underline">Los Angeles</Link> neighborhoods like Atwater Village and Silver Lake.</p>
+      </div>
     ],
     icon: "Zap",
     image: "https://images.pexels.com/photos/32497160/pexels-photo-32497160.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -498,7 +541,7 @@ export interface LocationData {
   name: string;
   shortName: string;
   description: string;
-  longDescription: string[];
+  longDescription: (string | React.ReactNode)[];
   neighborhoods: string[];
   zipCodes: string[];
 }
@@ -512,7 +555,7 @@ export const locations: LocationData[] = [
       "George The Electrician is proud to serve our home city of Glendale, California with licensed electrical services for homes and businesses.",
     longDescription: [
       "Glendale is our home. George The Electrician has been serving the Glendale community for over 15 years, from the tree-lined streets of Verdugo Woodlands to the bustling commercial corridors of Brand Boulevard. We know the city's building codes, its historic housing stock, and the unique electrical challenges that come with both.",
-      "Whether you need a panel upgrade in a 1920s Rossmoyne home, EV charger installation for a downtown condo, or emergency repair at a Brand Boulevard restaurant, our local electricians arrive fast with the right parts and the right expertise.",
+      <>Whether you need a <Link to="/electrical-panel-upgrade-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">panel upgrade</Link> in a 1920s Rossmoyne home, <Link to="/ev-charger-installation-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">EV charger installation</Link> for a downtown condo, or <Link to="/emergency-electrician-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">emergency repair</Link> at a Brand Boulevard restaurant, our local electricians arrive fast with the right parts and the right expertise.</>,
     ],
     neighborhoods: [
       "Verdugo Woodlands",
@@ -533,7 +576,7 @@ export const locations: LocationData[] = [
     description:
       "Licensed electrician serving Pasadena, CA — from historic Craftsman homes to modern commercial build-outs, just minutes from Glendale.",
     longDescription: [
-      "Pasadena's mix of historic Craftsman homes and modern commercial spaces demands an electrician who understands both old-world wiring and cutting-edge technology. George The Electrician serves Pasadena with panel upgrades, EV charger installation, lighting retrofits, and 24/7 emergency repair.",
+      <>Pasadena's mix of historic Craftsman homes and modern commercial spaces demands an electrician who understands both old-world wiring and cutting-edge technology. George The Electrician serves Pasadena with <Link to="/electrical-panel-upgrade-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">panel upgrades</Link>, <Link to="/ev-charger-installation-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">EV charger installation</Link>, <Link to="/lighting-installation-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">lighting retrofits</Link>, and 24/7 <Link to="/emergency-electrician-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">emergency repair</Link>.</>,
       "We are familiar with Pasadena's permitting process and Title 24 requirements, and we coordinate inspections with the city's building department to keep your project on schedule.",
     ],
     neighborhoods: ["Old Pasadena", "Bungalow Heaven", "Linda Vista", "San Rafael", " Hastings Ranch"],
@@ -546,7 +589,7 @@ export const locations: LocationData[] = [
     description:
       "Trusted electrician serving Burbank, CA — home to major studios and thriving neighborhoods, we keep your power running reliably.",
     longDescription: [
-      "Burbank's entertainment industry and residential neighborhoods rely on dependable electrical systems. George The Electrician serves Burbank with commercial electrical services for studio facilities and production offices, plus residential repairs, panel upgrades, and EV charger installation for local homeowners.",
+      <>Burbank's entertainment industry and residential neighborhoods rely on dependable electrical systems. George The Electrician serves Burbank with <Link to="/commercial-electrician-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">commercial electrical services</Link> for studio facilities and production offices, plus <Link to="/electrical-repair-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">residential repairs</Link>, <Link to="/electrical-panel-upgrade-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">panel upgrades</Link>, and <Link to="/ev-charger-installation-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">EV charger installation</Link> for local homeowners.</>,
       "From Magnolia Park to the Media District, we deliver fast, professional electrical service that keeps Burbank's homes and businesses powered.",
     ],
     neighborhoods: ["Magnolia Park", "Media District", "Downtown Burbank", "Riverside", "Hillside"],
@@ -560,7 +603,7 @@ export const locations: LocationData[] = [
       "Licensed electrician serving Los Angeles neighborhoods near Glendale — from Atwater Village to Silver Lake and beyond.",
     longDescription: [
       "As a Glendale-based electrician, George The Electrician serves neighboring Los Angeles communities including Atwater Village, Silver Lake, Echo Park, and Highland Park. We bring the same fast response and honest pricing that Glendale residents have trusted for over 15 years.",
-      "Whether you need a residential repair, a commercial tenant improvement, or an emergency electrician in the middle of the night, our team is ready to serve your Los Angeles neighborhood.",
+      <>Whether you need a <Link to="/electrical-repair-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">residential repair</Link>, a <Link to="/commercial-electrician-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">commercial tenant improvement</Link>, or an <Link to="/emergency-electrician-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">emergency electrician</Link> in the middle of the night, our team is ready to serve your Los Angeles neighborhood.</>,
     ],
     neighborhoods: ["Atwater Village", "Silver Lake", "Echo Park", "Highland Park", "Glassell Park", "Eagle Rock"],
     zipCodes: ["90026", "90031", "90039", "90041", "90042", "90065"],
@@ -572,7 +615,7 @@ export const locations: LocationData[] = [
     description:
       "Premium electrical services for La Cañada Flintridge homes — panel upgrades, EV chargers, lighting, and more, minutes from Glendale.",
     longDescription: [
-      "La Cañada Flintridge's upscale homes deserve an electrician who matches their quality. George The Electrician serves La Cañada with premium residential electrical services, from whole-home rewiring and panel upgrades to landscape lighting and EV charger installation.",
+      <>La Cañada Flintridge's upscale homes deserve an electrician who matches their quality. George The Electrician serves La Cañada with premium residential electrical services, from whole-home rewiring and <Link to="/electrical-panel-upgrade-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">panel upgrades</Link> to <Link to="/lighting-installation-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">landscape lighting</Link> and <Link to="/ev-charger-installation-glendale-ca" className="text-yellow-600 hover:text-yellow-700 underline underline-offset-2">EV charger installation</Link>.</>,
       "We understand the expectations of La Cañada homeowners — clean workmanship, respectful service, and lasting results. Our team treats your home with the care it deserves.",
     ],
     neighborhoods: ["Flintridge", "La Cañada", "Descanso Gardens"],
@@ -590,46 +633,25 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Maria Gonzalez",
+    name: "Frances Clark",
     location: "Glendale, CA",
     rating: 5,
-    text: "George came out the same day when our breaker kept tripping. He found a loose neutral wire that two other electricians missed. Honest, fast, and fair pricing. I will never call anyone else.",
-    service: "Electrical Repair",
+    text: "Exceptional assistance and dependable service. The specialist arrived on time and worked carefully to install outlets in many rooms. Excellent dialogue for the whole consultation.",
+    service: "Outlet Installation",
   },
   {
-    name: "David Kim",
-    location: "Pasadena, CA",
-    rating: 5,
-    text: "We needed a panel upgrade for our Tesla Wall Connector. George's team assessed the panel, explained our options without pressure, and completed the upgrade and charger install in one day. Flawless work.",
-    service: "EV Charger + Panel Upgrade",
-  },
-  {
-    name: "Jennifer Liu",
-    location: "Burbank, CA",
-    rating: 5,
-    text: "Our restaurant lost power on a Friday night during dinner service. I called George at 9 PM and he had an electrician there in under an hour. Saved our entire weekend. These guys are lifesavers.",
-    service: "Emergency Electrician",
-  },
-  {
-    name: "Robert Martinez",
+    name: "Crystal Santos",
     location: "Glendale, CA",
     rating: 5,
-    text: "Bought a 1940s home in Verdugo Woodlands and George did a full electrical inspection before escrow closed. His report helped us negotiate $8,000 in repairs. Worth every penny.",
-    service: "Electrical Inspection",
+    text: "A very skilled crew that made setting up our home EV charger very easy. They told us the exact date they would be there, showed up on time, and did the job without any extra charges. The charger works perfectly, and the whole thing looks very stylish.",
+    service: "EV Charger Installation",
   },
   {
-    name: "Sarah Thompson",
-    location: "La Cañada Flintridge, CA",
+    name: "Heather Xiong",
+    location: "Glendale, CA",
     rating: 5,
-    text: "George installed recessed LED lighting throughout our living room and kitchen. The work was clean, the walls were untouched, and the result is stunning. True professionals.",
-    service: "Lighting Installation",
-  },
-  {
-    name: "Michael Chang",
-    location: "Los Angeles, CA",
-    rating: 5,
-    text: "Called for a dead outlet in Atwater Village. The electrician was on time, diagnosed a failed GFCI in five minutes, replaced it, and charged exactly what was quoted. No upsells, no surprises.",
-    service: "Outlet Repair",
+    text: "Outstanding professionalism and dedication to satisfying customers. If I needed electrical work done again, I would absolutely use them.",
+    service: "Electrical Service",
   },
 ];
 
@@ -640,43 +662,35 @@ export interface FAQItem {
 
 export const homeFAQs: FAQItem[] = [
   {
-    question: "What areas does George The Electrician serve?",
-    answer:
-      "We are based in Glendale, CA and serve Glendale, Pasadena, Burbank, La Cañada Flintridge, and neighboring Los Angeles communities including Atwater Village, Silver Lake, and Eagle Rock. If you are within 25 miles of Glendale, we can help.",
+    question: "How much does an electrician cost in Glendale CA?",
+    answer: "Our standard diagnostic service call is $89, which is credited toward any repair you approve. We provide flat-rate, upfront pricing before any work begins — no hourly billing and no surprise fees so you know exactly how much the service will cost."
   },
   {
-    question: "Are you available for emergency electrical service?",
-    answer:
-      "Yes. We offer 24/7 emergency electrical service throughout our service area. Call us any time — day or night — and a live dispatcher will send a licensed electrician to your home or business, typically within 60–90 minutes in Glendale.",
+    question: "Do you provide 24 hour emergency electrical service?",
+    answer: "Yes. We offer 24/7 emergency electrical service. Call us any time — day or night — and a live dispatcher will send a licensed electrician to your home or business, typically within 60–90 minutes in Glendale, with no after-hours surcharges."
   },
   {
-    question: "How much do you charge for a service call?",
-    answer:
-      "Our standard diagnostic service call is $89, which is credited toward any repair you approve. We provide flat-rate, upfront pricing before any work begins — no hourly billing and no surprise fees. Emergency calls are the same rate, with no after-hours surcharge.",
+    question: "Do you install EV chargers?",
+    answer: "Absolutely. We install Level 2 EV chargers for every major EV brand (Tesla, Rivian, Ford, etc.), assess your panel's capacity, and guide you through available rebates from Glendale Water and Power and federal tax credits."
   },
   {
-    question: "Are you licensed and insured?",
-    answer:
-      "Yes. George The Electrician is fully licensed by the California State License Board, bonded, and carries comprehensive liability and workers' compensation insurance. We provide proof of coverage on request for any project.",
+    question: "Can you upgrade a 100 amp panel to 200 amp?",
+    answer: "Yes, 200-amp panel upgrades are one of our specialties. We handle the entire process, including load calculations, city permits with Glendale or LADBS, and coordinating the power disconnect/reconnect with your local utility company."
   },
   {
-    question: "Do you offer warranties on your work?",
-    answer:
-      "Every repair and installation is backed by our lifetime workmanship warranty. If an issue we fixed returns due to our workmanship, we return and correct it at no charge. Manufacturer warranties on parts and fixtures apply separately.",
+    question: "How quickly can an electrician come out?",
+    answer: "For emergencies, we dispatch immediately and arrive within 60-90 minutes. For standard service calls and estimates, we offer same-day or next-day appointments. Our dispatcher will give you a specific time window and call when the electrician is on the way."
   },
   {
-    question: "Can you help with EV charger installation and rebates?",
-    answer:
-      "Absolutely. We install Level 2 EV chargers for every major EV brand, assess your panel's capacity, and guide you through available rebates from Glendale Water and Power and federal tax credits. We provide all documentation needed to claim your incentives.",
+    question: "Do you service older homes?",
+    answer: "Yes. We have extensive experience with historic homes in Glendale, Pasadena, and Los Angeles. We regularly replace dangerous knob-and-tube wiring, upgrade ungrounded two-prong outlets, and bring older electrical systems up to modern code safely without destroying lath and plaster walls."
   },
   {
-    question: "Do you work on commercial properties?",
-    answer:
-      "Yes. We provide full commercial electrical services including tenant improvements, build-outs, three-phase power, Title 24 lighting compliance, data cabling, and preventive maintenance contracts. We work nights and weekends to minimize business downtime.",
+    question: "Do you provide electrical inspections?",
+    answer: "Yes. We provide comprehensive electrical safety inspections for home buyers, sellers, and landlords. Our detailed reports identify code violations, safety hazards, and panel issues, helping you negotiate repairs during escrow or ensure tenant safety."
   },
   {
-    question: "How can I schedule an appointment?",
-    answer:
-      "The fastest way is to call us at (747) 269-3742. We also offer same-day appointments for most service calls in Glendale. Our dispatcher will give you a window and call when the electrician is on the way.",
-  },
+    question: "Do you serve Pasadena and Burbank?",
+    answer: "Yes. While we are based in Glendale, we provide full electrical services to Pasadena, Burbank, La Cañada Flintridge, and nearby Los Angeles neighborhoods like Atwater Village and Silver Lake. If you're within 25 miles of Glendale, we can help."
+  }
 ];

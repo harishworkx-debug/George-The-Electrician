@@ -64,8 +64,8 @@ export default function ServicesPage() {
   return (
     <>
       <SEO
-        title="Electrical Services in Glendale, CA | George The Electrician — 10+ Services"
-        description="Complete electrical services in Glendale, CA — residential, commercial, emergency repair, panel upgrades, EV chargers, lighting, outlets, ceiling fans, inspections. Licensed electrician. Upfront pricing. Call (747) 269-3742."
+        title="Our Electrical Services | George The Electrician"
+        description="Explore all electrical services provided by George The Electrician. From residential wiring to commercial build-outs, panel upgrades, and EV chargers."
         canonical="/services"
       />
 
@@ -82,7 +82,7 @@ export default function ServicesPage() {
             </span>
           </div>
           <h1 className="text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">
-            Electrical Services in <span className="text-yellow-400">Glendale, CA</span>
+            Our <span className="text-yellow-400">Electrical Services</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
             From emergency repairs to full commercial build-outs — we are your complete electrical solution. 10+ services, one licensed team, upfront pricing every time.
@@ -387,7 +387,7 @@ export default function ServicesPage() {
           </div>
           <div className="text-center mt-6">
             <Link to="/faq" className="text-sm font-semibold text-yellow-600 hover:text-yellow-700">
-              View All FAQs →
+              View All Glendale Electrical FAQs →
             </Link>
           </div>
         </div>

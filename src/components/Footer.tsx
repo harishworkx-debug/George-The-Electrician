@@ -32,13 +32,13 @@ export function Footer() {
                     to={`/${s.urlSlug}`}
                     className="text-sm hover:text-yellow-400 transition-colors"
                   >
-                    {s.shortTitle}
+                    {s.title}
                   </Link>
                 </li>
               ))}
               <li>
                 <Link to="/services" className="text-sm text-yellow-400 hover:text-yellow-300 font-medium">
-                  View All Services →
+                  View All Electrical Services →
                 </Link>
               </li>
             </ul>
@@ -59,7 +59,7 @@ export function Footer() {
               ))}
               <li>
                 <Link to="/service-areas" className="text-sm text-yellow-400 hover:text-yellow-300 font-medium">
-                  View All Areas →
+                  View All Service Areas →
                 </Link>
               </li>
             </ul>
@@ -103,6 +103,8 @@ export function Footer() {
             © {new Date().getFullYear()} {business.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
+            <Link to="/about" className="text-xs text-gray-500 hover:text-yellow-400 transition-colors">About</Link>
+            <Link to="/blog" className="text-xs text-gray-500 hover:text-yellow-400 transition-colors">Blog</Link>
             <Link to="/contact" className="text-xs text-gray-500 hover:text-yellow-400 transition-colors">Contact</Link>
             <Link to="/faq" className="text-xs text-gray-500 hover:text-yellow-400 transition-colors">FAQ</Link>
             <Link to="/services" className="text-xs text-gray-500 hover:text-yellow-400 transition-colors">Services</Link>

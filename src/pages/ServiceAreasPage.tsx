@@ -127,7 +127,7 @@ export default function ServiceAreasPage() {
               Being local means we know your building department, your permitting process, and the unique electrical challenges that come with your neighborhood — whether that is a 1920s Craftsman in Pasadena's Bungalow Heaven or a modern commercial space in Burbank's Media District. We are not a national chain — we are your neighbors, and we treat every job like it is in our own home.
             </p>
             <p>
-              Each city we serve has its own dedicated page with neighborhood details, ZIP codes, response times, and local information. Find your city below to learn more, or call now to schedule a visit.
+              Each city we serve has its own dedicated page with neighborhood details, ZIP codes, response times, and local information. Find your city below to see our local services, or call now to schedule a visit.
             </p>
           </div>
         </div>
@@ -328,7 +328,7 @@ export default function ServiceAreasPage() {
           <div className="p-8 rounded-2xl bg-gray-50 border border-gray-200">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Services Available in All Areas</h2>
             <p className="text-gray-600 mb-6">
-              No matter which city you are in, we offer the full range of electrical services. Click any service to learn more.
+              No matter which city you are in, we offer the full range of electrical services. Click any service below to view full details.
             </p>
             <div className="flex flex-wrap gap-3">
               {services.map((s) => (
@@ -337,7 +337,7 @@ export default function ServiceAreasPage() {
                   to={`/${s.urlSlug}`}
                   className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-sm text-gray-700 hover:border-yellow-400 hover:text-yellow-600 transition-colors"
                 >
-                  {s.shortTitle}
+                  {s.title}
                 </Link>
               ))}
             </div>

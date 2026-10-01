@@ -1,3 +1,4 @@
+import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Phone, CheckCircle2, ChevronRight, Star, ShieldCheck, Clock, Award, Zap, MapPin } from "lucide-react";
 import { SEO, buildServiceSchema, buildFAQSchema } from "@/components/SEO";
@@ -77,11 +78,13 @@ export default function ServicePage({ slug: propSlug }: { slug?: string }) {
                 />
               </div>
 
-              {service.longDescription.map((para, i) => (
-                <p key={i} className="text-gray-700 text-lg leading-relaxed mb-6">
-                  {para}
-                </p>
-              ))}
+              <div className="space-y-6 text-gray-700 text-lg leading-relaxed mb-10">
+                {service.longDescription.map((content, i) => (
+                  <React.Fragment key={i}>
+                    {typeof content === 'string' ? <p>{content}</p> : content}
+                  </React.Fragment>
+                ))}
+              </div>
 
               <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-6">
                 What's Included
@@ -146,7 +149,7 @@ export default function ServicePage({ slug: propSlug }: { slug?: string }) {
                     ))}
                   </ul>
                   <Link to="/services" className="block text-sm font-semibold text-yellow-600 hover:text-yellow-700 mt-3">
-                    View All Services →
+                    View All Electrical Services in Glendale →
                   </Link>
                 </div>
 

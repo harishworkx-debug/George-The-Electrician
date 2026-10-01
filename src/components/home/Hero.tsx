@@ -26,12 +26,12 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
-            Glendale's Most Trusted{" "}
-            <span className="text-yellow-400">Electrician</span>
+            Welcome to{" "}
+            <span className="text-yellow-400">George The Electrician</span>
           </h1>
 
           <p className="text-lg lg:text-xl text-gray-300 leading-relaxed mb-8 max-w-xl">
-            Licensed, insured, and available 24/7. From panel upgrades to emergency repairs — we deliver clean, code-compliant electrical work with upfront pricing and a lifetime warranty.
+            Licensed, insured, and available 24/7. From <Link to="/electrical-panel-upgrade-glendale-ca" className="text-yellow-400 hover:underline">panel upgrades</Link> to <Link to="/emergency-electrician-glendale-ca" className="text-yellow-400 hover:underline">emergency repairs</Link> — we deliver clean, code-compliant electrical work with upfront pricing and a lifetime warranty.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

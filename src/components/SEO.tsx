@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { business } from "@/data/business";
+import { business, images } from "@/data/business";
 
 interface SEOProps {
   title: string;
@@ -19,7 +19,14 @@ export function SEO({ title, description, canonical, schema = [] }: SEOProps) {
     telephone: business.phone,
     email: business.email,
     url: baseUrl,
-    image: `${baseUrl}/og-image.jpg`,
+    logo: `${baseUrl}/logo.png`,
+    image: [
+      `${baseUrl}/og-image.jpg`,
+      images.hero
+    ],
+    sameAs: [
+      business.mapsUrl
+    ],
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -97,6 +104,10 @@ export function buildServiceSchema(serviceName: string, description: string, url
       "@type": "Electrician",
       name: business.name,
       telephone: business.phone,
+      url: baseUrl,
+      logo: `${baseUrl}/logo.png`,
+      image: images.hero,
+      sameAs: [business.mapsUrl],
       address: {
         "@type": "PostalAddress",
         streetAddress: business.address.street,

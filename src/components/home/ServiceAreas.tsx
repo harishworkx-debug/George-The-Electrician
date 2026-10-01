@@ -40,7 +40,7 @@ export function ServiceAreas() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-1">{loc.shortName}</h3>
                 <span className="inline-flex items-center gap-1 text-sm text-yellow-400 font-medium">
-                  View Area Page
+                  Electrician in {loc.shortName}
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
               </div>
@@ -53,7 +53,7 @@ export function ServiceAreas() {
             to="/service-areas"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-black text-white font-semibold hover:bg-gray-900 transition-all"
           >
-            View All Service Areas
+            View All Los Angeles County Service Areas
             <ChevronRight className="w-5 h-5" />
           </Link>
         </div>

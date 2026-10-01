@@ -1,4 +1,5 @@
 import { CheckCircle2, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import { business, images } from "@/data/business";
 
 const reasons = [
@@ -28,7 +29,7 @@ export function WhyChooseUs() {
             </div>
             <div className="absolute -bottom-6 -right-2 lg:-right-6 bg-black rounded-2xl p-6 shadow-xl max-w-[240px]">
               <div className="text-yellow-400 text-4xl font-bold">{business.yearsExperience}+</div>
-              <div className="text-white text-sm font-medium mt-1">Years serving Glendale with honest, reliable electrical work</div>
+              <div className="text-white text-sm font-medium mt-1">Years serving <Link to="/electrician-glendale-ca" className="text-yellow-400 hover:underline">Glendale</Link> with honest, reliable electrical work</div>
             </div>
           </div>
 
@@ -40,7 +41,7 @@ export function WhyChooseUs() {
               More Than an Electrician — Your Trusted Local Expert
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              We have built our reputation one Glendale home and business at a time. When you call George The Electrician, you get honest advice, clean workmanship, and fair pricing — every single time.
+              We have built our reputation one <Link to="/electrician-glendale-ca" className="text-yellow-600 hover:underline">Glendale</Link> home and business at a time. When you call George The Electrician, you get honest advice, clean workmanship, and fair pricing — every single time.
             </p>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-4 mb-8">
               {reasons.map((reason) => (

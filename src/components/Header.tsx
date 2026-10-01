@@ -155,6 +155,22 @@ export function Header() {
               </div>
 
               <Link
+                to="/about"
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  isActive("/about") ? "text-yellow-400 bg-yellow-400/10" : "text-gray-300 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                About
+              </Link>
+              <Link
+                to="/blog"
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  isActive("/blog") ? "text-yellow-400 bg-yellow-400/10" : "text-gray-300 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                Blog
+              </Link>
+              <Link
                 to="/reviews"
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isActive("/reviews") ? "text-yellow-400 bg-yellow-400/10" : "text-gray-300 hover:text-white hover:bg-white/5"
@@ -257,6 +273,22 @@ export function Header() {
                 </div>
               )}
 
+              <Link
+                to="/about"
+                className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  isActive("/about") ? "text-yellow-400 bg-yellow-400/10" : "text-gray-300 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                About
+              </Link>
+              <Link
+                to="/blog"
+                className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  isActive("/blog") ? "text-yellow-400 bg-yellow-400/10" : "text-gray-300 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                Blog
+              </Link>
               <Link
                 to="/reviews"
                 className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${

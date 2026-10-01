@@ -14,19 +14,23 @@ import { ContactSection } from "@/components/home/ContactSection";
 import { CTABanner } from "@/components/CTABanner";
 import { buildFAQSchema } from "@/components/SEO";
 import { homeFAQs } from "@/data/business";
+import { Gallery } from "@/components/home/Gallery";
+import { AboutSection } from "@/components/home/AboutSection";
 
 export default function HomePage() {
   return (
     <>
       <SEO
-        title="Electrician Glendale, CA | George The Electrician — Licensed & 24/7"
-        description="Glendale's trusted licensed electrician for 15+ years. Residential, commercial, emergency electrical repair, panel upgrades, EV chargers & more. Call (747) 269-3742 for same-day service."
+        title="Glendale Electrician | George The Electrician"
+        description="George The Electrician is a trusted, licensed electrical contractor serving Glendale and surrounding areas for over 15 years. Contact us for all your electrical needs."
         canonical="/"
         schema={[buildFAQSchema(homeFAQs)]}
       />
       <Hero />
       <TrustBadges />
       <ServicesGrid />
+      <Gallery />
+      <AboutSection />
       <StatsSection />
       <WhyChooseUs />
       <ProcessSection />
