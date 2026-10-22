@@ -9,7 +9,7 @@ interface SEOProps {
 }
 
 export function SEO({ title, description, canonical, schema = [] }: SEOProps) {
-  const baseUrl = "https://georgetheelectrician.com";
+  const baseUrl = "https://georgetheelectrician.co";
   const fullCanonical = `${baseUrl}${canonical}`;
 
   const defaultSchema: object = {
@@ -62,11 +62,6 @@ export function SEO({ title, description, canonical, schema = [] }: SEOProps) {
         closes: "17:00",
       },
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: business.rating,
-      reviewCount: business.reviewCount,
-    },
   };
 
   const allSchema = [defaultSchema, ...schema];

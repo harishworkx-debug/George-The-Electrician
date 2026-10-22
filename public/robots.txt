@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.georgetheelectrician.co/sitemap.xml
+Sitemap: https://georgetheelectrician.co/sitemap.xml

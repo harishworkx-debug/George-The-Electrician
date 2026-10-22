@@ -1,155 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Pages -->
+  <!-- Core Pages (8 URLs) -->
   <url>
-    <loc>https://www.georgetheelectrician.co/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/about/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/about</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/blog/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/blog</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/services/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/services</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/service-areas/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/service-areas</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/reviews/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/reviews</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/faq/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/faq</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/contact/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-
-  <!-- Service Pages -->
-  <url>
-    <loc>https://www.georgetheelectrician.co/residential-electrician-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/commercial-electrician-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/electrical-repair-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/emergency-electrician-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/electrical-panel-upgrade-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/ev-charger-installation-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/lighting-installation-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/outlet-switch-repair-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/ceiling-fan-installation-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/electrical-inspection-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/contact</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
 
-  <!-- Electrician Location Pages -->
+  <!-- Individual Service Pages (10 URLs) -->
   <url>
-    <loc>https://www.georgetheelectrician.co/electrician-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/residential-electrician-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/electrician-pasadena-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/commercial-electrician-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/electrician-burbank-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrical-repair-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/electrician-los-angeles-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/emergency-electrician-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/electrician-la-canada-flintridge-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrical-panel-upgrade-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/ev-charger-installation-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/lighting-installation-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/outlet-switch-repair-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/ceiling-fan-installation-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/electrical-inspection-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
 
-  <!-- Electrical Services Location Pages -->
+  <!-- Electrician Location Pages (5 URLs) -->
   <url>
-    <loc>https://www.georgetheelectrician.co/electrical-services-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrician-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/electrical-services-pasadena-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrician-pasadena-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/electrical-services-burbank-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrician-burbank-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/electrical-services-los-angeles-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrician-los-angeles-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/electrical-services-la-canada-flintridge-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrician-la-canada-flintridge-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
-  <!-- Blog Posts -->
+
+  <!-- Electrical Services Location Pages (5 URLs) -->
   <url>
-    <loc>https://www.georgetheelectrician.co/blog/electrical-panel-upgrade-cost-glendale-ca/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.georgetheelectrician.co/blog/when-to-replace-electrical-panel/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrical-services-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/blog/why-circuit-breaker-keeps-tripping/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrical-services-pasadena-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/blog/do-i-need-200-amp-electrical-panel/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrical-services-burbank-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/blog/ev-charger-installation-requirements-glendale/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrical-services-los-angeles-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/blog/when-is-electrical-inspection-needed/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/electrical-services-la-canada-flintridge-ca</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+
+  <!-- Blog Posts (8 URLs) -->
+  <url>
+    <loc>https://georgetheelectrician.co/blog/electrical-panel-upgrade-cost-glendale-ca</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/blog/gfci-outlet-problems/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/blog/when-to-replace-electrical-panel</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://www.georgetheelectrician.co/blog/signs-home-needs-electrical-rewiring/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://georgetheelectrician.co/blog/why-circuit-breaker-keeps-tripping</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/blog/do-i-need-200-amp-electrical-panel</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/blog/ev-charger-installation-requirements-glendale</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/blog/when-is-electrical-inspection-needed</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/blog/gfci-outlet-problems</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://georgetheelectrician.co/blog/signs-home-needs-electrical-rewiring</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
 </urlset>

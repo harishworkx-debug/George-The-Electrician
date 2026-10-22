@@ -305,9 +305,12 @@ export default function LocationPage({ slug: propSlug }: { slug?: string }) {
       {/* Testimonials */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">
-            Reviews from {location.shortName} Customers
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2 text-center">
+            Verified Reviews from Clients in Our Service Area
           </h2>
+          <p className="text-sm text-gray-500 text-center mb-8">
+            Trusted electrical service across Glendale, La Cañada Flintridge, Pasadena, Burbank, and Los Angeles.
+          </p>
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.slice(0, 3).map((t, i) => (
               <div key={i} className="bg-gray-50 rounded-2xl p-6 border border-gray-200">

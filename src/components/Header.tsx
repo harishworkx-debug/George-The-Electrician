@@ -202,7 +202,7 @@ export function Header() {
                 className="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-lg bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-sm transition-all shadow-lg shadow-yellow-500/20 hover:shadow-yellow-500/40 hover:scale-105"
               >
                 <Phone className="w-4 h-4" strokeWidth={2.5} />
-                Call Now
+                {business.phoneDisplay}
               </a>
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}

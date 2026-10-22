@@ -26,8 +26,8 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
-            Welcome to{" "}
-            <span className="text-yellow-400">George The Electrician</span>
+            Electrician in{" "}
+            <span className="text-yellow-400">Glendale, CA</span>
           </h1>
 
           <p className="text-lg lg:text-xl text-gray-300 leading-relaxed mb-8 max-w-xl">

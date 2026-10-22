@@ -18,7 +18,7 @@ export function StickyCallButton() {
       >
         <span className="absolute inset-0 rounded-full bg-yellow-400 animate-ping opacity-20 group-hover:opacity-0"></span>
         <Phone className="w-5 h-5 relative" strokeWidth={2.5} />
-        <span className="relative">Call Now</span>
+        <span className="relative">{business.phoneDisplay}</span>
       </a>
     </>
   );
